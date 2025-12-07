@@ -1,0 +1,4 @@
+{
+	"bytebank-home-angular": "http://localhost:4201/remoteEntry.json",
+	"bytebank-dashboard-angular": "http://localhost:4202/remoteEntry.json"
+}
