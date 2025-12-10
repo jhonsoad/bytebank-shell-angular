@@ -1,0 +1,20 @@
+.not-found-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  background-image: var(--bg-gradient);
+  color: black;
+  padding: 2rem;
+  height: 74vh;
+}
+
+.not-found-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.not-found-img {
+  padding: 1rem;
+}
