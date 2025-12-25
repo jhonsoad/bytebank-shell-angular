@@ -1,7 +1,7 @@
 :root {
   /* Alturas de Linha (Line Heights) */
-  --line-height-body: 100%;
-  --line-height-heading: 120%;
+  --lh-body: 100%;
+  --lh-heading: 120%;
 
     /* Outros */
   --br-sm: 4px;

@@ -1,26 +1,26 @@
 .footer {
   background-color: black;
-  padding: var(--2xl) var(--lg);
+  padding: var(--s-2xl) var(--s-lg);
   color: var(--white);
 }
 
 .footer-logged {
   background-color: var(--bg-blue);
-  padding: var(--2xl) var(--lg);
+  padding: var(--s-2xl) var(--s-lg);
   color: var(--white);
 }
 
 .container {
   display: flex;
   justify-content: space-evenly;
-  padding-right: var(--xl);
-  gap: var(--2xl);
+  padding-right: var(--s-xl);
+  gap: var(--s-2xl);
 }
 
 .footerColumn {
   display: flex;
   flex-direction: column;
-  gap: var(--md);
+  gap: var(--s-md);
 }
 
 .columnTitle {
@@ -45,7 +45,7 @@
 
 .socialIcons {
   display: flex;
-  gap: var(--md);
+  gap: var(--s-md);
   color: var(--white);
 }
 
@@ -57,7 +57,7 @@
   .container {
     flex-direction: column;
     align-items: flex-start;
-    gap: var(--xl);
+    gap: var(--s-xl);
   }
 
   .footerColumn {
