@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  /* Fontes */
+  --font-primary: 'Inter', sans-serif;
+
+  /* Tamanhos de Fonte */
+  --text-small: 13px;
+  --text: 16px;
+  --text-large: 18px;
+  --title-h3: 20px;
+  --title-h2: 25px;
+  --title-h1: 28px;
+  --big: 31px;
+
+  /* Pesos de Fonte */
+  --regular: 400;
+  --medium: 600;
+  --bold: 700;
+}

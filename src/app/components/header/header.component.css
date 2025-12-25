@@ -1,0 +1,107 @@
+.header {
+  background-color: black;
+  padding: var(--s-lg) 0;
+}
+
+/* Estilos para o cabeçalho quando o usuário está logado */
+.loggedInHeader {
+  background-color: var(--bg-blue);
+  padding: var(--s-lg) 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--s-lg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoNav {
+  display: flex;
+  align-items: center;
+  gap: var(--s-xl);
+}
+
+.nav a {
+  margin-right: var(--s-xl);
+  font-weight: var(--medium);
+  transition: opacity 0.2s ease-in-out;
+  color: var(--quinary);
+}
+
+.nav a:last-child {
+  margin-right: 0;
+}
+
+.nav a:hover {
+  opacity: 0.8;
+}
+
+.actions {
+  display: flex;
+  gap: var(--s-md);
+}
+
+/* Estilos específicos para botões no header se necessário */
+.actions :global(.button.outline) {
+  border-color: var(--white);
+  color: var(--white);
+}
+
+.actions :global(.button.outline:hover) {
+  background-color: var(--white);
+  color: var(--bg-blue);
+}
+
+/* --- Estilos para a área logada --- */
+.loggedInContent {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  gap: var(--s-3xl);
+}
+
+.userName {
+  font-weight: var(--medium);
+  font-size: var(--text-small);
+  color: var(--white);
+}
+
+.userIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media (max-width: var(--breakpoint-tablet)) {
+  .logoNav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--s-sm);
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .actions {
+    flex-direction: column;
+    gap: var(--s-sm);
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Ajustes para a versão logada em mobile, se necessário */
+  .loggedInContent {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+}

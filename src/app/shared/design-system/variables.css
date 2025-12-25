@@ -1,0 +1,10 @@
+:root {
+  /* Alturas de Linha (Line Heights) */
+  --lh-body: 100%;
+  --lh-heading: 120%;
+
+    /* Outros */
+  --br-sm: 4px;
+  --br-md: 8px;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+}
