@@ -15,18 +15,18 @@ export const routes: Routes = [
       return loadRemoteModule('bytebank-home-angular', './Component').then((m) => m.AppComponent)
     }
   },
-  // {
-  //   path: 'bytebank', // O prefixo na URL da Shell
-  //   loadChildren: () =>
-  //     loadRemoteModule('bytebank-home-angular', './routes')
-  //       .then((m) => m.routes)
-  // },
   {
     path: 'dashboard',
-    loadComponent: () => {
-      return loadRemoteModule('bytebank-dashboard-angular', './Component').then((m) => m.AppComponent)
-    },
+    loadChildren: () =>
+      loadRemoteModule('bytebank-dashboard-angular', './routes')
+        .then((m) => m.routes)
   },
+  // {
+  //   path: 'dashboard',
+  //   loadComponent: () => {
+  //     return loadRemoteModule('bytebank-dashboard-angular', './Component').then((m) => m.AppComponent)
+  //   },
+  // },
   {
     path: '**',
     component: NotFoundComponent,
