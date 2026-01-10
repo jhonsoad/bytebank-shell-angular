@@ -1,3 +1,5 @@
+![Angular](https://img.shields.io/badge/Angular-v19-red)
+![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen)
 # 🚀 ByteBank - Shell (Angular Host)
 
 ## 🎯 Sobre o Projeto
