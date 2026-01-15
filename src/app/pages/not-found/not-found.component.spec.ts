@@ -1,6 +1,10 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { NotFoundComponent } from './not-found.component';
+import { provideRouter } from '@angular/router';
+import { HeaderComponent } from '../../components/header/header.component';
+import { FooterComponent } from '../../components/footer/footer.component';
+import { ButtonComponent } from '../../components/button/button.component';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 describe('NotFoundComponent', () => {
   let component: NotFoundComponent;
@@ -8,7 +12,18 @@ describe('NotFoundComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NotFoundComponent]
+      imports: [NotFoundComponent],
+      providers: [
+        provideRouter([])
+      ]
+    })
+    .overrideComponent(NotFoundComponent, {
+      remove: { 
+        imports: [HeaderComponent, FooterComponent, ButtonComponent] 
+      },
+      add:{
+        schemas: [NO_ERRORS_SCHEMA]
+      }
     })
     .compileComponents();
 
